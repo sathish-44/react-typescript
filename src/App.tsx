@@ -2,6 +2,9 @@ import './App.css';
 import { Greet } from './components/Greet'
 import { Person } from './components/Person'
 import { PersonList } from './components/PersonList'
+import { Status } from './components/Status'
+import { Heading } from './components/Heading'
+import { Oscar } from './components/Oscar'
 
 function App() {
   const personName = {
@@ -15,9 +18,17 @@ function App() {
   ]
   return (
     <div className="App">
-      <Greet name='sathish' msgCount={10} isLoggedIn={false} />
-      <Person name = {personName} />
-      <PersonList names = {nameList} />
+      <Greet name='sathish'
+      //  msgCount={10} 
+       isLoggedIn={true} />
+      {/*  <Person name = {personName} />
+      <PersonList names = {nameList} /> */}
+      <Status status='success' /> 
+      <Oscar>
+      <Heading>
+        PlaceHolder text
+      </Heading>
+      </Oscar>
     </div>
   );
 }
