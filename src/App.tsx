@@ -8,7 +8,8 @@ import { Oscar } from './components/Oscar'
 import { Button } from './components/Button'
 import { Input } from './components/Input'
 import { Container } from './components/Container'
-
+import { LoggedIn } from './components/state/LoggedIn'
+import { User } from './components/state/User'
 function App() {
   const personName = {
     fName : 'Sathish',
@@ -24,8 +25,8 @@ function App() {
       {/* <Greet name='sathish'
       //  msgCount={10} 
        isLoggedIn={true} /> */}
-      {/*  <Person name = {personName} />
-      <PersonList names = {nameList} /> */}
+      {/*  <Person name = {personName} />*/}
+      {/* <PersonList names = {nameList} />  */}
       {/* <Status status='success' /> 
       <Oscar>
       <Heading>
@@ -35,6 +36,8 @@ function App() {
       {/* <Button handleClick = {(event,id)=> {console.log('Button Clicked', event, id)}} /> */}
       {/* <Input value='' handleChange={(event)=> console.log(event)} /> */}
       {/* <Container styles={{border : '1 px solid black', padding: '1rem'}}/> */}
+      {/* <LoggedIn /> */}
+      <User />
     </div>
   );
 }
