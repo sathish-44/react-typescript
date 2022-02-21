@@ -34,7 +34,7 @@ function App() {
       </Oscar> */}
       {/* <Button handleClick = {(event,id)=> {console.log('Button Clicked', event, id)}} /> */}
       {/* <Input value='' handleChange={(event)=> console.log(event)} /> */}
-      <Container styles={{border : '1 px solid black', padding: '1rem'}}/>
+      {/* <Container styles={{border : '1 px solid black', padding: '1rem'}}/> */}
     </div>
   );
 }
